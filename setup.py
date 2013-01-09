@@ -3,7 +3,7 @@ from distutils.core import setup
 long_desc = open('README.md').read()
 
 setup(
-    name='MediaMosa Plugin for TinyMCE',
+    name='mediamosa_tinymce',
     version='0.0.1',
     author='UGent Portaal Team',
     author_email='portaal-tech@ugent.be',
