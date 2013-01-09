@@ -3,7 +3,7 @@ from distutils.core import setup
 long_desc = open('README.md').read()
 
 setup(
-    name='mediamosa_tinymce',
+    name='django-mediamosa-tinymce',
     version='0.0.1',
     author='UGent Portaal Team',
     author_email='portaal-tech@ugent.be',
