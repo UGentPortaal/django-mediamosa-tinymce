@@ -1,6 +1,6 @@
 from distutils.core import setup
 
-long_desc = open('README.txt').read()
+long_desc = open('README.md').read()
 
 setup(
     name='MediaMosa Plugin for TinyMCE',
