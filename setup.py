@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('README.rst', 'r') as file:
     long_desc = file.read()
@@ -10,7 +10,9 @@ setup(
     version=version,
     author='UGent Portaal Team',
     author_email='portaal-tech@ugent.be',
-    packages=['mediamosa_tinymce'],
+    packages=find_packages(),
+    include_package_data=True,
+    zip_safe=False,
     scripts=[],
     url='https://github.com/UGentPortaal/django-mediamosa-tinymce',
     license='BSD',
