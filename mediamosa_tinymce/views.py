@@ -11,8 +11,8 @@ class TinyMceAssetSelectionDialog(ListView):
     paginate_by = 10
 
     def get_queryset(self):
-        asset_list = api.asset_list()
-        return filter(lambda asset: asset.has_streamable_mediafiles, asset_list)
+        asset_list = api.asset_list(mime_type='mp4', mime_type_match='contains')
+        return asset_list
 
 
 class JSONTinyMceMediafileId(DetailView):
