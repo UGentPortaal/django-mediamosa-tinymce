@@ -1,7 +1,7 @@
 django-mediamosa-tinymce Changelog
 ==================================
 
-django-mediamosa-tinymce 0.0.1c2
+django-mediamosa-tinymce 0.0.1c3
 --------------------------------
 Initial version of django-mediamosa-tinymce. Contains support for:
 - Inserting assets in your tinymce editor
