@@ -5,7 +5,7 @@ import os
 import subprocess
 
 
-VERSION = (0, 0, 1, 'rc', 1)
+VERSION = (0, 0, 1, 'rc', 2)
 
 
 def get_version(version=None):
