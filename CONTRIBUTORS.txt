@@ -1,0 +1,2 @@
+Kevin Van Wilder (primary author, http://www.inuits.eu)
+Bert Vanderbauwhede (tinymce plugin example), https://github.com/batlock666)

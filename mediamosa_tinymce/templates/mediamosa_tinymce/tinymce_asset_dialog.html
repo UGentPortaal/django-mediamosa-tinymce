@@ -1,0 +1,92 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% load url from future %}
+
+
+{% block branding %}
+<h1 id="site-name">{% trans 'MediaMosa' %}</h1>
+{% endblock %}
+
+{% block extrahead %}
+    <script src="{{ STATIC_URL }}js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}tiny_mce/tiny_mce_popup.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(':button').click(function(event) {
+                var element = $(event.target);
+
+                var url = element.parents('tr').find('img').prop('src');
+
+                var data = {
+                    'asset_id': element.data("asset"),
+                    'url': url,
+                };
+                MediaMosaDialog.insert(data);
+                return false;
+            })
+        });
+
+        var MediafileIdQueryURI = '{% url "tinymce-json-mediafile-query" %}';
+
+    </script>
+    <script src="{{ STATIC_URL }}tiny_mce/plugins/mediamosa/mediamosa-dialog.js"></script>
+{% endblock extrahead %}
+
+{% block content %}
+<div class="content-main">
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Still</th>
+                    <th>Asset</th>
+                    <th>Aangemaakt door</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for asset in object_list %}
+                <tr>
+                    <td><input type="button" value="Selecteer" data-asset="{{ asset.id }}"></td>
+                    <td><img src="{{ asset.vpx_still_url }}" alt="still" width="60"></td>
+                    <td>{{ asset.dublin_core.title }}</td>
+                    <td>{{ asset.dublin_core.creator }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+
+        <div class="pagination">
+            <span class="step-links">
+                {% if page_obj.has_previous %}
+                    <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+        </div>
+
+        <div class="visualClear"></div>
+
+        <div class="mceActionPanel formControls">
+            <span class="actionButtons">
+                <input type="button"
+                       id="cancel"
+                       class="standalone"
+                       name="cancel"
+                       i18n:attributes="value common_cancel"
+                       onclick="tinyMCEPopup.close();" />
+            </span>
+        </div>
+
+    </form>
+</div>
+
+{% endblock content %}
