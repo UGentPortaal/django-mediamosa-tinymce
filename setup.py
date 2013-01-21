@@ -1,16 +1,38 @@
-from distutils.core import setup
+from setuptools import setup
 
-long_desc = open('README.md').read()
+with open('README.rst', 'r') as file:
+    long_desc = file.read()
+
+version = __import__('mediamosa_tinymce').get_version()
 
 setup(
     name='django-mediamosa-tinymce',
-    version='0.0.1',
+    version=version,
     author='UGent Portaal Team',
     author_email='portaal-tech@ugent.be',
     packages=['mediamosa_tinymce'],
     scripts=[],
-    url='http://www.mediamosa.org',
-    license='LICENSE.txt',
-    description='TinyMCE plugin for MediaMosa in Django.',
-    long_description=long_desc
+    url='https://github.com/UGentPortaal/django-mediamosa-tinymce',
+    license='BSD',
+    description='Django integration for mediamosa in TinyMCE.',
+    long_description=long_desc,
+    install_requires=(
+        'django-mediamosa',
+        'django-tinymce',
+    ),
+    classifiers=[
+          'Development Status :: 3 - Alpha',
+          'Environment :: Web Environment',
+          'Framework :: Django',
+          'Intended Audience :: Developers',
+          'License :: OSI Approved :: BSD License',
+          'Operating System :: MacOS :: MacOS X',
+          'Operating System :: Microsoft :: Windows',
+          'Operating System :: POSIX',
+          'Programming Language :: Python',
+          'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+          'Topic :: Multimedia :: Video',
+          'Topic :: Software Development :: Libraries',
+          'Topic :: Utilities'
+    ],
 )
