@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-08 14:22+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:46
+msgid "MMStillTitle"
+msgstr "Screenshot"
+
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:47
+msgid "MMAssetTitle"
+msgstr "Media Asset"
+
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:48
+msgid "MMOwner"
+msgstr "Eigenaar"
+
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:54
+msgid "MMSelectAsset"
+msgstr "Toevoegen"
+
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:67
+msgid "MMPrevious"
+msgstr "Vorige"
+
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:71
+msgid "MMPage"
+msgstr "Pagina"
+
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:71
+msgid "MMof"
+msgstr "van"
+
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:75
+msgid "MMNext"
+msgstr "Volgende"
