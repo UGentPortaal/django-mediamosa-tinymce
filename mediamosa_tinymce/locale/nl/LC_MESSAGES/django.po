@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-08 14:22+0100\n"
+"POT-Creation-Date: 2013-03-08 17:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,34 +17,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:46
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:48
 msgid "MMStillTitle"
 msgstr "Screenshot"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:47
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:49
 msgid "MMAssetTitle"
 msgstr "Media Asset"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:48
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:50
 msgid "MMOwner"
 msgstr "Eigenaar"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:54
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:56
 msgid "MMSelectAsset"
 msgstr "Toevoegen"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:67
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:69
 msgid "MMPrevious"
 msgstr "Vorige"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:71
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:73
 msgid "MMPage"
 msgstr "Pagina"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:71
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:73
 msgid "MMof"
 msgstr "van"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:75
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:77
 msgid "MMNext"
 msgstr "Volgende"
+
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:89
+msgid "MMCancel"
+msgstr "Annuleer"

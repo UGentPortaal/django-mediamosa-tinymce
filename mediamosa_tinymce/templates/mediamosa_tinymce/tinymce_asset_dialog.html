@@ -51,7 +51,7 @@
                     <tbody>
                         {% for asset in object_list %}
                         <tr>
-                            <td><input type="button" value="{% trans "MMSelectAsset" %}" data-asset="{{ asset.id }}" style="cursor: pointer;"></td>
+                            <td><input type="button" value="{% trans "MMSelectAsset" %}" data-asset="{{ asset.id }}" style="cursor: pointer;" /></td>
                             <td><img src="{{ asset.vpx_still_url }}" alt="still" width="60"></td>
                             <td>{{ asset.dublin_core.title }}</td>
                             <td>{{ asset.dublin_core.creator }}</td>
@@ -84,7 +84,7 @@
 
         <div class="mceActionPanel formControls">
             <span class="actionButtons">
-                <input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+                <input type="button" id="cancel" name="cancel" value="{% trans "MMCancel" %}" onclick="tinyMCEPopup.close();" />
 
             </span>
         </div>
