@@ -2,5 +2,6 @@ include *.txt
 include *.rst
 recursive-include docs *.txt
 include MANIFEST.in
+recursive-include mediamosa_tinymce/locale *
 recursive-include mediamosa_tinymce/static *
 recursive-include mediamosa_tinymce/templates *
