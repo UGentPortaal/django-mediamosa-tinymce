@@ -1,10 +1,9 @@
 django-mediamosa-tinymce Changelog
 ==================================
 
-django-mediamosa-tinymce 0.0.1c3
+django-mediamosa-tinymce 0.0.1c4
 --------------------------------
-Initial version of django-mediamosa-tinymce. Contains support for:
+Initial version of django-mediamosa-tinymce. Contains the following features:
 - Inserting assets in your tinymce editor
 - Playing an asset on the front-end
-- Dialog which connects to mediamosa api and list all assets that
-  can be inserted.
+- Asset list dialog
