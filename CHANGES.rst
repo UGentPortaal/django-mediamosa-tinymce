@@ -1,10 +1,10 @@
 django-mediamosa-tinymce Changelog
 ==================================
 
-django-mediamosa-tinymce 0.0.1c5
---------------------------------
+django-mediamosa-tinymce 0.1
+----------------------------
 Initial version of django-mediamosa-tinymce. Contains the following features:
 - Internationalization support (currently supported: dutch)
-- Inserting assets in your tinymce editor
+- Inserting public or personal assets in your tinymce editor
 - Playing an asset on the front-end
 - Asset list dialog
