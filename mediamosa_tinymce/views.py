@@ -8,11 +8,23 @@ from django_mediamosa.base import api
 
 class TinyMceAssetSelectionDialog(ListView):
     template_name = 'mediamosa_tinymce/tinymce_asset_dialog.html'
+    context_object_name = 'public_list'
     paginate_by = 10
 
     def get_queryset(self):
-        asset_list = api.asset_list(mime_type='mp4', mime_type_match='contains')
+        asset_list = api.asset_list(
+            mime_type='mp4',
+            mime_type_match='contains',
+            is_public_list=True)
         return asset_list
+
+    def get_context_data(self, **kwargs):
+        context = super(TinyMceAssetSelectionDialog, self).get_context_data(**kwargs)
+        context['private_list'] = api.asset_list(
+            mime_type='mp4',
+            mime_type_match='contains',
+            owner_id=self.request.user.username)
+        return context
 
 
 class JSONTinyMceMediafileId(DetailView):
