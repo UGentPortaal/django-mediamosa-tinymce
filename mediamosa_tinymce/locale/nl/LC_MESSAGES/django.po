@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-08 17:53+0100\n"
+"POT-Creation-Date: 2013-04-12 16:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,38 +17,54 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:48
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:64
+msgid "Public Assets"
+msgstr "Publieke assets"
+
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:65
+msgid "My Assets"
+msgstr "Mijn assets"
+
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:73
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:115
 msgid "MMStillTitle"
 msgstr "Screenshot"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:49
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:74
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:116
 msgid "MMAssetTitle"
 msgstr "Media Asset"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:50
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:75
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:117
 msgid "MMOwner"
 msgstr "Eigenaar"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:56
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:81
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:123
 msgid "MMSelectAsset"
 msgstr "Toevoegen"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:69
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:94
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:136
 msgid "MMPrevious"
 msgstr "Vorige"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:73
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:98
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:140
 msgid "MMPage"
 msgstr "Pagina"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:73
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:98
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:140
 msgid "MMof"
 msgstr "van"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:77
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:102
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:144
 msgid "MMNext"
 msgstr "Volgende"
 
-#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:89
+#: templates/mediamosa_tinymce/tinymce_asset_dialog.html:156
 msgid "MMCancel"
 msgstr "Annuleer"
