@@ -36,16 +36,16 @@
         display:inline;
         float:left;
       }
-      a {
-      display:block;
-      width:60px;
-      background: #ddd;
-      width: 90px;
-      text-align: center;
-      padding: 5px;
-      margin-bottom: -1px;
-      border: 1px solid #ddd;
-      border-bottom: 0px;
+      .idTabs a {
+          display:block;
+          width:60px;
+          background: #ddd;
+          width: 90px;
+          text-align: center;
+          padding: 5px;
+          margin-bottom: -1px;
+          border: 1px solid #ddd;
+          border-bottom: 0px;
       }
       .idTabs .selected {
         background: #fff;
@@ -61,8 +61,8 @@
       </div>
       <div class="clear" style="clear:both;"></div>
       <ul class="idTabs">
-        <li><a href="#public-assets">{% trans "Public Assets" %}</a></li>
-        <li><a href="#my-assets">{% trans "My Assets" %}</a></li>
+        <li><a href="{% url 'tinymce-mmasset-select-dialog' %}" class="{% if not my_tab %}selected{% endif %}">{% trans "Public Assets" %}</a></li>
+        <li><a href="{% url 'tinymce-mmasset-personal-select-dialog' %}" class="{% if my_tab %}selected{% endif %}">{% trans "My Assets" %}</a></li>
       </ul>
       <div id="public-assets" class="content-main" style="background-color: #fff; padding: 5px; border: 1px solid #ddd">
             <form>
@@ -77,48 +77,6 @@
                     </thead>
                     <tbody>
                         {% for asset in public_list %}
-                        <tr>
-                            <td><input type="button" value="{% trans "MMSelectAsset" %}" data-asset="{{ asset.id }}" style="cursor: pointer;" /></td>
-                            <td><img src="{{ asset.vpx_still_url }}" alt="still" width="60"></td>
-                            <td>{{ asset.dublin_core.title }}</td>
-                            <td>{{ asset.dublin_core.creator }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-
-
-                <div class="pagination">
-                    <span class="step-links">
-                        {% if page_obj.has_previous %}
-                        <a href="?page={{ page_obj.previous_page_number }}">{% trans "MMPrevious" %}</a>
-                        {% endif %}
-
-                        <span class="current">
-                            {% trans "MMPage" %} {{ page_obj.number }} {% trans "MMof" %} {{ page_obj.paginator.num_pages }}
-                        </span>
-
-                        {% if page_obj.has_next %}
-                        <a href="?page={{ page_obj.next_page_number }}">{% trans "MMNext" %}</a>
-                        {% endif %}
-                    </span>
-                </div>
-
-            </form>
-        </div>
-        <div id="my-assets" class="content-main" style="background-color: #fff; padding: 5px; border: 1px solid #ddd">
-            <form>
-                <table cellspacing="5">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>{% trans "MMStillTitle" %}</th>
-                            <th>{% trans "MMAssetTitle" %}</th>
-                            <th>{% trans "MMOwner" %}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for asset in private_list %}
                         <tr>
                             <td><input type="button" value="{% trans "MMSelectAsset" %}" data-asset="{{ asset.id }}" style="cursor: pointer;" /></td>
                             <td><img src="{{ asset.vpx_still_url }}" alt="still" width="60"></td>
