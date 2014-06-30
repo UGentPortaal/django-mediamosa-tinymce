@@ -1,6 +1,10 @@
 django-mediamosa-tinymce Changelog
 ==================================
 
+django-mediamosa-tinymce 0.1.2
+----------------------------
+- Django 1.6 compatible 
+
 django-mediamosa-tinymce 0.1
 ----------------------------
 - Fix for pagination tabs
