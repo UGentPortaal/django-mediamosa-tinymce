@@ -2,7 +2,7 @@ from django.conf.urls import url, include
 
 from django_mediamosa.views import PlayMediaFile
 
-from views import TinyMcePublicAssetSelectionDialog, JSONTinyMceMediafileId, TinyMcePrivateAssetSelectionDialog
+from .views import TinyMcePublicAssetSelectionDialog, JSONTinyMceMediafileId, TinyMcePrivateAssetSelectionDialog
 
 urlpatterns = [
 
