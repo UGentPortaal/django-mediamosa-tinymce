@@ -1,6 +1,11 @@
 django-mediamosa-tinymce Changelog
 ==================================
 
+django-mediamosa-tinymce 0.1.4
+------------------------------
+- Python 3 compatible
+
+
 django-mediamosa-tinymce 0.1.3
 ----------------------------
 - Django 1.10 compatible 
